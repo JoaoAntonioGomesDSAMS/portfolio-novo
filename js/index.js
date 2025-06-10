@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Animação de digitação
     const typed = new Typed('.typing', {
-        strings: ['Engenharia de Software', 'Ciência da Computação', 'Design Digital', 'Sistemas de Informação'],
+        strings: [' Análise e Desenvolvimento de Sistemas'],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

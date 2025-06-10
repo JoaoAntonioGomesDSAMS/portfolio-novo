@@ -1,7 +1,7 @@
 /* Reset e Configurações Gerais */
 :root {
-    --primary-color: #4CAF50; /* Verde */
-    --primary-dark: #388E3C;
+    --primary-color: #00ff26; /* Verde */
+    --primary-dark: #21be29;
     --primary-light: #C8E6C9;
     --black: #121212;
     --black-light: #1E1E1E;
@@ -1261,8 +1261,7 @@ section {
     }
     
     .btn-secondary {
-        margin-left: 0;
-        margin-top: 1.5rem;
+        margin-left: 5px;
     }
     
     .image-wrapper {
