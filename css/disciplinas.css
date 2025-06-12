@@ -264,6 +264,156 @@ section {
     transform: rotate(-45deg);
 }
 
+/* Projetos */
+.projects-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.filter-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--gray);
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+.section-light .filter-btn {
+    color: var(--black);
+    border-color: var(--gray-light);
+}
+
+.section-light .filter-btn.active,
+.section-light .filter-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.project-card {
+    background-color: var(--black-lighter);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    position: relative;
+}
+
+.section-light .project-card {
+    background-color: var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(76, 175, 80, 0.3);
+}
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.project-overlay p {
+    font-size: 1.4rem;
+    color: var(--gray-light);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-link {
+    padding: 1rem 2.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.project-link:hover {
+    background-color: var(--primary-dark);
+}
+
+.project-info {
+    padding: 2rem;
+}
+
+.project-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-info span {
+    font-size: 1.4rem;
+    color: var(--gray-light);
+}
+
+.projects-more {
+    text-align: center;
+    margin-top: 5rem;
+}
+
 /* Estilos específicos para a página de matérias */
 .materias-container {
     display: grid;
@@ -301,7 +451,7 @@ section {
 
 /* Footer */
 .footer {
-    background-color: var(--black-light);
+    background-color: var(--black);
     padding: 6rem 0 0;
 }
 

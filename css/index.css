@@ -447,7 +447,7 @@ section {
 
 .image-container {
     position: relative;
-    border-radius: 20px;
+    border-radius: 100px;
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
@@ -1133,6 +1133,7 @@ section {
     .btn {
         padding: 1rem 2rem;
         font-size: 1.4rem;
+        text-align: center;
     }
 
     .info-grid {
