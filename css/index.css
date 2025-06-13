@@ -932,7 +932,7 @@ section {
 
 /* Footer */
 .footer {
-    background-color: var(--black-light);
+    background-color: var(--black);
     padding: 6rem 0 0;
 }
 
@@ -940,7 +940,6 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 5rem;
-    margin-bottom: 5rem;
 }
 
 .footer-logo {
