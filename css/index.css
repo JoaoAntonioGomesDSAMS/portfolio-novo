@@ -443,11 +443,13 @@ section {
 .sobre-image {
     flex: 1;
     position: relative;
+    max-width: 300px;
+
 }
 
 .image-container {
     position: relative;
-    border-radius: 100px;
+    border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
