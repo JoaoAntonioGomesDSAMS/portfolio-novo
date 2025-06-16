@@ -13,6 +13,7 @@
     <!-- Fontes alternativas de ícones -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -35,241 +36,257 @@
         </div>
     </nav>
 
-<!-- Disciplinas - Ícones únicos e profissionais -->
-<section id="projetos" class="section-dark">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title"><span>Disciplinas</span></h2>
-            <p class="section-subtitle">
-                Disciplinas cursadas durante o ano letivo
-            </p>
+    <!-- Disciplinas - Ícones únicos e profissionais -->
+    <section id="projetos" class="section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span>Disciplinas</span></h2>
+                <p class="section-subtitle">
+                    Disciplinas cursadas durante o ano letivo
+                </p>
+            </div>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="4">Todas</button>
+                <button class="filter-btn" data-filter="4">4° Ano</button>
+                <button class="filter-btn" data-filter="5">5° Ano</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projeto Integrador I -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                            <path d="M14.05 6A5 5 0 0 1 18 10"></path>
+                            <path d="M14.05 2a9 9 0 0 1 8 7.94"></path>
+                        </svg>
+                        <div class="project-overlay">
+                            <p>Planejamento e desenvolvimento dos conhecimentos aprendidos</p>
+                            <a href="html/disciplinas/pi1.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Projeto Integrador I</h3>
+                    </div>
+                </div>
+
+                <!-- Banco de Dados -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                        </svg>
+                        <div class="project-overlay">
+                            <p>Abordagem prática e teórica em bancos SQL e NoSQL para aplicações modernas</p>
+                            <a href="html/disciplinas/tabdrnr.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Técnicas Avançadas de Banco de Dados Relacional e Não Relacional</h3>
+                    </div>
+                </div>
+
+                <!-- Estruturas de Dados -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="4 17 10 11 4 5" />
+                            <polyline points="20 7 14 13 20 19" />
+                        </svg>
+                        <div class="project-overlay">
+                            <p>Implementação e análise de listas, filas, pilhas, árvores</p>
+                            <a href="html/disciplinas/es.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Estruturas de Dados</h3>
+                    </div>
+                </div>
+
+                <!-- Engenharia de Software -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                        <div class="project-overlay">
+                            <p>Processos, requisitos, modelagem e qualidade no desenvolvimento de software</p>
+                            <a href="html/disciplinas/ed.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Engenharia de Software</h3>
+                    </div>
+                </div>
+
+                <!-- Interação Humano Computador -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                        <div class="project-overlay">
+                            <p>Design centrado no usuário, usabilidade e acessibilidade em interfaces</p>
+                            <a href="html/disciplinas/ihc.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interação Humano Computador</h3>
+                    </div>
+                </div>
+
+                <!-- Programação Avançada -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                            <polyline points="13 2 13 9 20 9" />
+                        </svg>
+                        <div class="project-overlay">
+                            <p>Padrões de projeto, programação orientada a objetos e desenvolvimento robusto</p>
+                            <a href="html/disciplinas/tap.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Técnicas Avançadas de Programação</h3>
+                    </div>
+                </div>
+
+                <!-- Programação Web e Mobile -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                        </svg>
+                        <div class="project-overlay">
+                            <p>Desenvolvimento de sistemas multiplataforma com foco em desempenho e UX</p>
+                            <a href="html/disciplinas/tapwem.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Técnicas Avançadas de Programação Web e Mobile</h3>
+                    </div>
+                </div>
+
+                <!-- Inteligência Corporativa -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18" />
+                            <path d="M18 17V9" />
+                            <path d="M13 17V5" />
+                            <path d="M8 17v-3" />
+                        </svg>
+                        <div class="project-overlay">
+                            <p>Análise de dados e estratégias digitais aplicadas à gestão moderna</p>
+                            <a href="html/disciplinas/icmned.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Inteligência Corporativa e Modelos de Negócios na Era Digital</h3>
+                    </div>
+                </div>
+
+                <!-- Gestão Ágil de Projetos -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                        <div class="project-overlay">
+                            <p>Aplicação de metodologias ágeis como Scrum e XP em projetos reais</p>
+                            <a href="html/disciplinas/gaps.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Gestão Ágil de Projetos de Software</h3>
+                    </div>
+                </div>
+
+                <!-- Sistemas Operacionais -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                            <line x1="12" y1="8" x2="12" y2="16" />
+                            <line x1="8" y1="12" x2="16" y2="12" />
+                        </svg>
+
+                        <div class="project-overlay">
+                            <p>Arquitetura de hardware, gerência de processos, análise de sistemas operacionais</p>
+                            <a href="html/disciplinas/ocso.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Organização de Computadores e Sistemas Operacionais</h3>
+                    </div>
+                </div>
+
+                <!-- Matemática Discreta -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+                            <circle cx="5" cy="12" r="2" />
+                            <circle cx="12" cy="5" r="2" />
+                            <circle cx="19" cy="12" r="2" />
+                            <line x1="7" y1="12" x2="10" y2="7" />
+                            <line x1="14" y1="7" x2="17" y2="12" />
+                            <line x1="10" y1="17" x2="14" y2="17" />
+                        </svg>
+
+                        <div class="project-overlay">
+                            <p>Lógica, conjuntos, grafos e suas aplicações na computação</p>
+                            <a href="html/disciplinas/md.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Matemática Discreta</h3>
+                    </div>
+                </div>
+
+                <!-- Língua Inglesa -->
+                <div class="project-card" data-category="4">
+                    <div class="project-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 0 1 6.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                        </svg>
+                        <div class="project-overlay">
+                            <p>Entendimento da língua inglesa</p>
+                            <a href="html/disciplinas/li1e2.html" class="project-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Língua Inglesa I e II
+                        </h3>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="projects-filter">
-            <button class="filter-btn active" data-filter="4">Todas</button>
-            <button class="filter-btn" data-filter="4">4° Ano</button>
-            <button class="filter-btn" data-filter="5">5° Ano</button>
-        </div>
-
-        <div class="projects-grid">
-            <!-- Projeto Integrador I -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                        <path d="M14.05 2a9 9 0 0 1 8 7.94"/>
-                        <path d="M14.05 6A5 5 0 0 1 18 10"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Planejamento e desenvolvimento dos conhecimentos aprendidos</p>
-                        <a href="html/disciplinas/pi1.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Projeto Integrador I</h3>
-                </div>
-            </div>
-
-            <!-- Banco de Dados -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
-                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Abordagem prática e teórica em bancos SQL e NoSQL para aplicações modernas</p>
-                        <a href="html/disciplinas/tabdrnr.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Técnicas Avançadas de Banco de Dados Relacional e Não Relacional</h3>
-                </div>
-            </div>
-
-            <!-- Estruturas de Dados -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="4 17 10 11 4 5"/>
-                        <polyline points="20 7 14 13 20 19"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Implementação e análise de listas, filas, pilhas, árvores</p>
-                        <a href="html/disciplinas/es.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Estruturas de Dados</h3>
-                </div>
-            </div>
-
-            <!-- Engenharia de Software -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                        <path d="M2 17l10 5 10-5"/>
-                        <path d="M2 12l10 5 10-5"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Processos, requisitos, modelagem e qualidade no desenvolvimento de software</p>
-                        <a href="html/disciplinas/ed.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Engenharia de Software</h3>
-                </div>
-            </div>
-
-            <!-- Interação Humano Computador -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                        <line x1="8" y1="21" x2="16" y2="21"/>
-                        <line x1="12" y1="17" x2="12" y2="21"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Design centrado no usuário, usabilidade e acessibilidade em interfaces</p>
-                        <a href="html/disciplinas/ihc.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Interação Humano Computador</h3>
-                </div>
-            </div>
-
-            <!-- Programação Avançada -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
-                        <polyline points="13 2 13 9 20 9"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Padrões de projeto, programação orientada a objetos e desenvolvimento robusto</p>
-                        <a href="html/disciplinas/tap.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Técnicas Avançadas de Programação</h3>
-                </div>
-            </div>
-
-            <!-- Programação Web e Mobile -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Desenvolvimento de sistemas multiplataforma com foco em desempenho e UX</p>
-                        <a href="html/disciplinas/tapwem.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Técnicas Avançadas de Programação Web e Mobile</h3>
-                </div>
-            </div>
-
-            <!-- Inteligência Corporativa -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M3 3v18h18"/>
-                        <path d="M18 17V9"/>
-                        <path d="M13 17V5"/>
-                        <path d="M8 17v-3"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Análise de dados e estratégias digitais aplicadas à gestão moderna</p>
-                        <a href="html/disciplinas/icmned.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Inteligência Corporativa e Modelos de Negócios na Era Digital</h3>
-                </div>
-            </div>
-
-            <!-- Gestão Ágil de Projetos -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <polyline points="12 6 12 12 16 14"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Aplicação de metodologias ágeis como Scrum e XP em projetos reais</p>
-                        <a href="html/disciplinas/gaps.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Gestão Ágil de Projetos de Software</h3>
-                </div>
-            </div>
-
-            <!-- Sistemas Operacionais -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/>
-                        <path d="M8.5 8.5v.01"/>
-                        <path d="M16 15.5v.01"/>
-                        <path d="M12 12v.01"/>
-                        <path d="M11 17v.01"/>
-                        <path d="M7 14v.01"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Arquitetura de hardware, gerência de processos, análise de sistemas operacionais</p>
-                        <a href="html/disciplinas/ocso.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Organização de Computadores e Sistemas Operacionais</h3>
-                </div>
-            </div>
-
-            <!-- Matemática Discreta -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M2 20h20"/>
-                        <path d="M3 10h18"/>
-                        <path d="M5 6h14"/>
-                        <path d="M12 6v14"/>
-                        <path d="M9 18l3-3-3-3"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Lógica, conjuntos, grafos e suas aplicações na computação</p>
-                        <a href="html/disciplinas/md.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Matemática Discreta</h3>
-                </div>
-            </div>
-
-            <!-- Língua Inglesa -->
-            <div class="project-card" data-category="4">
-                <div class="project-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 0 1 6.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
-                    </svg>
-                    <div class="project-overlay">
-                        <p>Entendimento da língua inglesa</p>
-                        <a href="html/disciplinas/li1e2.html" class="project-link">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Língua Inglesa I e II
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer (Igual ao principal) -->
     <footer class="footer">
@@ -285,7 +302,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="index.html#sobre">Sobre Mim</a></li>
                         <li><a href="index.html#contato">Contato</a></li>
-                        <li><a href="disciplinas.html">Matérias</a></li>
+                        <li><a href="disciplinas.html">Disciplinas</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
