@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados Relacional | Meu Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <style>
+        /* Estilos específicos para código SQL */
+        .sql-code {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 5px 5px 0;
+            overflow-x: auto;
+        }
+
+        .sql-code code {
+            font-family: 'Courier New', monospace;
+            color: var(--white);
+            line-height: 1.6;
+            display: block;
+        }
+
+        .sql-keyword {
+            color: #569CD6;
+        }
+
+        .sql-function {
+            color: #DCDCAA;
+        }
+
+        .sql-string {
+            color: #CE9178;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">João <span>Cestonaro</span></a>
+            <div class="navbar-links">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../../index.html#sobre" class="nav-link">Sobre Mim</a>
+                <a href="../../index.html#contato" class="nav-link">Contato</a>
+                <a href="../../disciplinas.html" class="nav-link active">Disciplinas</a>
+                <div class="nav-indicator"></div>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Matéria -->
+    <header class="materia-header">
+        <div class="container">
+            <h1>Técnicas Avançadas de Banco de Dados Relacional e Não Relacional</h1>
+            <p>Professor: Alexandre Aparecido Bernardes</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Matéria -->
+    <main class="materia-container">
+        <!-- Botão Voltar -->
+        <a href="../../disciplinas.html" class="btn btn-secondary btn-voltar">
+            <i class="fas fa-arrow-left"></i> Voltar para Disciplinas
+        </a>
+        <section class="materia-section">
+            <h2>Resumo da Disciplina</h2>
+            <p>A disciplina aborda os fundamentos essenciais dos bancos de dados relacionais, com foco no uso prático da
+                linguagem SQL para a criação, manipulação e segurança das estruturas de dados. Os conteúdos exploram
+                desde os comandos básicos até a implementação de elementos reutilizáveis e estratégias de controle de
+                acesso, promovendo o uso consciente e eficiente dos recursos de um SGBD (Sistema de Gerenciamento de
+                Banco de Dados).
+            </p>
+        </section>
+
+        <section class="materia-section">
+            <h2>Conteúdos Trabalhados</h2>
+            <ul>
+                <li>Fundamentos e arquitetura de bancos de dados relacionais e não relacionais</li>
+                <li>Manipulação de dados com comandos SQL</li>
+                <li>Controle de permissões com DCL (<code>GRANT</code>, <code>REVOKE</code>)</li>
+                <li>Criação e utilização de views (visões) para organização de dados</li>
+                <li>Criação de funções definidas pelo usuário (user-defined functions)</li>
+                <li>Execuções práticas entre funções</li>
+                <li>Uso de funções personalizadas em consultas</li>
+                <li>Boas práticas de segurança, integridade e organização de dados</li>
+            </ul>
+
+            <p>
+                Exemplo de View:
+            </p>
+            <div class="sql-code">
+                <code>
+        <span class="sql-keyword">CREATE VIEW</span> ExemploView <span class="sql-keyword">AS</span><br>
+        &nbsp;&nbsp;<span class="sql-keyword">SELECT</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;p.codigo_produto <span class="sql-keyword">AS</span> Codigo,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;p.descricao_produto <span class="sql-keyword">AS</span> Descricao,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;i.quantidade <span class="sql-keyword">AS</span> Quantidade,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;(i.quantidade * p.val_unit) <span class="sql-keyword">AS</span> Total<br>
+        &nbsp;&nbsp;<span class="sql-keyword">FROM</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Item_do_pedido i<br>
+        &nbsp;&nbsp;<span class="sql-keyword">INNER JOIN</span> Produto p<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="sql-keyword">ON</span> i.codigo_produto = p.codigo_produto;
+    </code>
+            </div>
+        </section>
+
+        <section class="materia-section">
+            <h2>Metodologia Aplicada</h2>
+            <p>As aulas são conduzidas de forma dinâmica, integrando exposições teóricas com atividades práticas. Os
+                alunos utilizam sistemas como MySQL e PostgreSQL para testar os conceitos aprendidos, criando
+                procedimentos, funções e visões diretamente nos bancos de dados. A aplicação de comandos DCL também é
+                exercitada em ambientes simulados para reforçar o controle seguro de acesso.</p>
+
+            <p>As atividades incluem:</p>
+
+            <ul>
+                <li>Exercícios práticos em laboratório;</li>
+                <li>Projetos simples e estudos de caso inspirados em contextos reais;</li>
+                <li>Trabalhos e tarefas individuais;</li>
+                <li>Avaliações compostas por testes teóricos e análise de código SQL produzido em aula.</li>
+            </ul>
+            Exemplo de Function:
+            <div class="sql-code">
+                <code>
+    <span class="sql-keyword">CREATE VIEW</span> ExemploFunction<br>
+    &nbsp;&nbsp;(Codigo, Descricao, Quantidade, Total) <span class="sql-keyword">AS</span><br>
+    &nbsp;&nbsp;<span class="sql-keyword">SELECT</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;i.num_pedido,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;p.codigo_produto,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;p.descricao_produto,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;i.quantidade,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;p.val_unit,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;i.quantidade * p.val_unit<br>
+    &nbsp;&nbsp;<span class="sql-keyword">FROM</span> Item_do_pedido i<br>
+    &nbsp;&nbsp;<span class="sql-keyword">INNER JOIN</span> Produto p<br>
+    &nbsp;&nbsp;<span class="sql-keyword">ON</span> i.codigo_produto = p.codigo_produto;
+</code>
+            </div>
+        </section>
+
+        <section class="materia-section">
+            <h2>Competências Desenvolvidas</h2>
+            <p>Durante o curso, os alunos adquiriram habilidades importantes para o uso profissional de bancos de dados,
+                como:</p>
+
+            <ul>
+                <li>Estruturação e entendimento de sistemas relacionais;</li>
+                <li>Automação de tarefas repetitivas com procedures e functions;</li>
+                <li>Criação de views para facilitar consultas e manter a organização lógica dos dados;</li>
+                <li>Aplicação de regras de acesso seguras por meio da DCL;</li>
+                <li>Aperfeiçoamento da lógica de programação dentro do contexto do SQL;</li>
+                <li>Visão ampliada sobre boas práticas no desenvolvimento de sistemas que envolvem persistência de
+                    dados.</li>
+            </ul>
+            <p>
+                Exemplo de DCL
+            </p>
+            <div class="sql-code">
+                <code>
+                    <span class="sql-keyword">CREATE ROLE</span> ExemploRole <span class="sql-keyword">AS</span><br>
+                    <span class="sql-keyword">WITH</span> LOGIN ENCRYPTED PASSWORD 'senha'<br>
+                </code>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">João <span>Cestonaro</span></a>
+                    <p>Desenvolvido com paixão e dedicação durante minha jornada acadêmica.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.html#sobre">Sobre Mim</a></li>
+                        <li><a href="../../index.html#contato">Contato</a></li>
+                        <li><a href="../../disciplinas.html">Matérias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> joaoantoniogms938@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Urânia, São Paulo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Desenvolvido por João Antonio Gomes Cestonaro</p>
+                <p>Todos os direitos reservados © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

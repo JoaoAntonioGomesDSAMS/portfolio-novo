@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Dados | Meu Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <style>
+        /* Estilos específicos para código C */
+        .c-code {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 5px 5px 0;
+            overflow-x: auto;
+        }
+
+        .c-code code {
+            font-family: 'Courier New', monospace;
+            color: var(--white);
+            line-height: 1.6;
+            display: block;
+        }
+
+        .c-keyword {
+            color: #569CD6;
+        }
+
+        .c-type {
+            color: #4EC9B0;
+        }
+
+        .c-function {
+            color: #DCDCAA;
+        }
+
+        .c-string {
+            color: #CE9178;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">João <span>Cestonaro</span></a>
+            <div class="navbar-links">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../../index.html#sobre" class="nav-link">Sobre Mim</a>
+                <a href="../../index.html#contato" class="nav-link">Contato</a>
+                <a href="../../disciplinas.html" class="nav-link active">Disciplinas</a>
+                <div class="nav-indicator"></div>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Matéria -->
+    <header class="materia-header">
+        <div class="container">
+            <h1>Estrutura de Dados</h1>
+            <p>Professor: Willian Guimarães Borges</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Matéria -->
+    <main class="materia-container">
+        <!-- Botão Voltar -->
+        <a href="../../disciplinas.html" class="btn btn-secondary btn-voltar">
+            <i class="fas fa-arrow-left"></i> Voltar para Disciplinas
+        </a>
+        <section class="materia-section">
+            <h2>Resumo da Disciplina</h2>
+            <p>A disciplina explora as principais estruturas de dados utilizadas na programação, com foco na implementação prática utilizando a linguagem C. O conteúdo vai desde os conceitos fundamentais, como vetores e matrizes, até estruturas mais sofisticadas, como listas encadeadas, pilhas, filas e filas circulares. Além disso, são trabalhados aspectos essenciais como o uso de structs, ponteiros, alocação dinâmica de memória e modularização com funções — formando uma base robusta para o desenvolvimento de algoritmos eficientes e soluções computacionais bem estruturadas.
+            </p>
+        </section>
+
+        <section class="materia-section">
+            <h2>Conteúdos Desenvolvidos</h2>
+            <ul>
+                <li>Revisão dos conceitos fundamentais da linguagem C</li>
+                <li>Manipulação de vetores e matrizes</li>
+                <li>Criação e uso de structs (tipos de dados compostos)</li>
+                <li>Utilização de ponteiros e memória dinâmica</li>
+                <li>Modularização com funções e organização do código</li>
+                <li>Implementação de listas encadeadas (simples e duplas)</li>
+                <li>Pilhas (estrutura LIFO) e suas principais operações</li>
+                <li>Filas (FIFO) e filas circulares</li>
+                <li>Aplicação prática de cada estrutura de dados</li>
+                <li>Análise de eficiência e complexidade dos algoritmos</li>
+            </ul>
+
+            <p>Exemplo de estrutura de nó para lista encadeada:</p>
+            <div class="c-code">
+                <code>
+        <span class="c-keyword">typedef struct</span> <span class="c-type">no</span> {<br>
+        &nbsp;&nbsp;<span class="c-type">int</span> valor;<br>
+        &nbsp;&nbsp;<span class="c-keyword">struct</span> <span class="c-type">no</span> *proximo;<br>
+        } <span class="c-type">No</span>;<br><br>
+        
+        <span class="c-type">No</span>* <span class="c-function">criar_no</span>(<span class="c-type">int</span> valor) {<br>
+        &nbsp;&nbsp;<span class="c-type">No</span> *novo = (<span class="c-type">No</span>*)<span class="c-function">malloc</span>(<span class="c-keyword">sizeof</span>(<span class="c-type">No</span>));<br>
+        &nbsp;&nbsp;<span class="c-keyword">if</span> (novo != <span class="c-keyword">NULL</span>) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;novo->valor = valor;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;novo->proximo = <span class="c-keyword">NULL</span>;<br>
+        &nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;<span class="c-keyword">return</span> novo;<br>
+        }
+    </code>
+            </div>
+        </section>
+
+        <section class="materia-section">
+            <h2>Abordagem Metodológica</h2>
+            <p>As aulas seguem um modelo teórico-prático, com explanações conceituais seguidas de atividades práticas de codificação. Os estudantes desenvolvem programas em linguagem C aplicando as estruturas estudadas em cenários que simulam situações reais da programação.</p>
+
+            <p>As atividades incluem:</p>
+
+            <ul>
+                <li>Exercícios individuais e em grupo</li>
+                <li>Projetos de codificação aplicados a problemas do cotidiano computacional</li>
+                <li>Análise e depuração de código-fonte</li>
+                <li>Avaliações com provas teóricas e implementações práticas</li>
+            </ul>
+
+            <p>O ambiente de desenvolvimento utilizado foi o Code::Blocks ou Dev-C++, com foco em boas práticas de programação e uso intensivo de recursos como debug e modularização.</p>
+
+            <p>Exemplo de implementação de pilha:</p>
+            <div class="c-code">
+                <code>
+        <span class="c-keyword">typedef struct</span> <span class="c-type">pilha</span> {<br>
+        &nbsp;&nbsp;<span class="c-type">No</span> *topo;<br>
+        } <span class="c-type">Pilha</span>;<br><br>
+        
+        <span class="c-type">void</span> <span class="c-function">empilhar</span>(<span class="c-type">Pilha</span> *p, <span class="c-type">int</span> valor) {<br>
+        &nbsp;&nbsp;<span class="c-type">No</span> *novo = <span class="c-function">criar_no</span>(valor);<br>
+        &nbsp;&nbsp;<span class="c-keyword">if</span> (novo != <span class="c-keyword">NULL</span>) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;novo->proximo = p->topo;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;p->topo = novo;<br>
+        &nbsp;&nbsp;}<br>
+        }
+    </code>
+            </div>
+        </section>
+
+        <section class="materia-section">
+            <h2>Conhecimentos Adquiridos</h2>
+            <p>Durante a disciplina, desenvolvi uma compreensão aprofundada sobre como representar e manipular dados eficientemente na memória. Aprendi a trabalhar com ponteiros e memória dinâmica — elementos indispensáveis para a criação de estruturas flexíveis como listas encadeadas, que se ajustam à necessidade de armazenamento em tempo real.</p>
+            
+            <p>A prática com pilhas e filas demonstrou como a escolha correta da estrutura de dados pode facilitar a resolução de determinados problemas, tornando o código mais limpo, eficiente e funcional. A cada exercício, fui aprimorando minha capacidade analítica para identificar a estrutura mais apropriada, considerando fatores como desempenho e uso de memória.</p>
+        </section>
+
+        <section class="materia-section">
+            <h2>Projeto Final: Lista Encadeada em C</h2>
+            <p>Durante o curso, desenvolvi um projeto completo de lista encadeada simples em linguagem C, disponível no GitHub. O sistema inclui todas as operações fundamentais para gerenciar a estrutura:</p>
+
+            <ul>
+                <li>Inserção de elementos no início e no fim</li>
+                <li>Remoção de nós específicos</li>
+                <li>Busca de valores dentro da lista</li>
+                <li>Exibição sequencial dos dados</li>
+                <li>Liberação completa da memória utilizada</li>
+            </ul>
+
+            <p>Exemplo de função para inserir no final da lista:</p>
+            <div class="c-code">
+                <code>
+        <span class="c-type">void</span> <span class="c-function">inserir_fim</span>(<span class="c-type">Lista</span> *lista, <span class="c-type">int</span> valor) {<br>
+        &nbsp;&nbsp;<span class="c-type">No</span> *novo = <span class="c-function">criar_no</span>(valor);<br>
+        &nbsp;&nbsp;<span class="c-keyword">if</span> (novo == <span class="c-keyword">NULL</span>) <span class="c-keyword">return</span>;<br><br>
+        
+        &nbsp;&nbsp;<span class="c-keyword">if</span> (lista->inicio == <span class="c-keyword">NULL</span>) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;lista->inicio = novo;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;lista->fim = novo;<br>
+        &nbsp;&nbsp;} <span class="c-keyword">else</span> {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;lista->fim->proximo = novo;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;lista->fim = novo;<br>
+        &nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;lista->tamanho++;<br>
+        }
+    </code>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">João <span>Cestonaro</span></a>
+                    <p>Desenvolvido com paixão e dedicação durante minha jornada acadêmica.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.html#sobre">Sobre Mim</a></li>
+                        <li><a href="../../index.html#contato">Contato</a></li>
+                        <li><a href="../../disciplinas.html">Matérias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> joaoantoniogms938@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Urânia, São Paulo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Desenvolvido por João Antonio Gomes Cestonaro</p>
+                <p>Todos os direitos reservados © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

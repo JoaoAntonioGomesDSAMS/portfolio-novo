@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engenharia de Software | Meu Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <style>
+        /* Estilos específicos para diagramas UML */
+        .uml-code {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 5px 5px 0;
+            overflow-x: auto;
+        }
+
+        .uml-code code {
+            font-family: 'Courier New', monospace;
+            color: var(--white);
+            line-height: 1.6;
+            display: block;
+        }
+
+        .uml-keyword {
+            color: #569CD6;
+        }
+
+        .uml-class {
+            color: #4EC9B0;
+        }
+
+        .uml-relation {
+            color: #DCDCAA;
+        }
+
+        .uml-note {
+            color: #CE9178;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">João <span>Cestonaro</span></a>
+            <div class="navbar-links">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../../index.html#sobre" class="nav-link">Sobre Mim</a>
+                <a href="../../index.html#contato" class="nav-link">Contato</a>
+                <a href="../../disciplinas.html" class="nav-link active">Disciplinas</a>
+                <div class="nav-indicator"></div>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Matéria -->
+    <header class="materia-header">
+        <div class="container">
+            <h1>Engenharia de Software</h1>
+            <p>Professor: Jefferson Antonio Ribeiro Passerini</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Matéria -->
+    <main class="materia-container">
+        <!-- Botão Voltar -->
+        <a href="../../disciplinas.html" class="btn btn-secondary btn-voltar">
+            <i class="fas fa-arrow-left"></i> Voltar para Disciplinas
+        </a>
+        <section class="materia-section">
+            <h2>Resumo da Disciplina</h2>
+            <p>A disciplina tem como objetivo apresentar os princípios fundamentais da Engenharia de Software, enfocando a construção sistemática, disciplinada e mensurável de sistemas. O conteúdo abrange os principais modelos de processo de software, com ênfase no RUP (Rational Unified Process), além de técnicas para levantamento, modelagem e documentação de requisitos utilizando a linguagem UML. A proposta é preparar o aluno para projetar soluções robustas e alinhadas com os padrões adotados pela indústria de desenvolvimento de software.</p>
+        </section>
+
+        <section class="materia-section">
+            <h2>Conteúdos Desenvolvidos</h2>
+            <ul>
+                <li>Fundamentos e objetivos da Engenharia de Software</li>
+                <li>Modelos de processo de software</li>
+                <li>Processo Unificado (RUP): fases, atividades e papéis</li>
+                <li>Engenharia de requisitos: identificação, elicitação e especificação</li>
+                <li>Requisitos funcionais vs. não funcionais</li>
+                <li>Modelagem de requisitos com UML:
+                    <ul>
+                        <li>Atores</li>
+                        <li>Casos de uso</li>
+                    </ul>
+                </li>
+                <li>Modelagem de sistemas com UML:
+                    <ul>
+                        <li>Diagramas de casos de uso</li>
+                        <li>Diagramas de classes</li>
+                    </ul>
+                </li>
+                <li>Projeto de arquitetura de software</li>
+                <li>Padrões arquiteturais: camadas, componentes e responsabilidades</li>
+            </ul>
+
+            <p>Exemplo de especificação de caso de uso:</p>
+            <div class="uml-code">
+                <code>
+        <span class="uml-keyword">Caso de Uso:</span> Realizar Login<br>
+        <span class="uml-keyword">Atores:</span> Usuário<br>
+        <span class="uml-keyword">Pré-condições:</span> O usuário deve estar cadastrado no sistema<br>
+        <span class="uml-keyword">Fluxo Principal:</span><br>
+        1. O usuário informa email e senha<br>
+        2. O sistema valida as credenciais<br>
+        3. O sistema redireciona para a página inicial<br>
+        <span class="uml-keyword">Fluxos Alternativos:</span><br>
+        3a. Credenciais inválidas: sistema exibe mensagem de erro
+    </code>
+            </div>
+        </section>
+
+        <section class="materia-section">
+            <h2>Abordagem Metodológica</h2>
+            <p>A disciplina é desenvolvida por meio de uma combinação entre teoria e prática, promovendo a aplicação dos conceitos em cenários reais de desenvolvimento de software. As aulas incluem:</p>
+
+            <ul>
+                <li>Exposições teóricas com apoio de slides e quadro</li>
+                <li>Análise de estudos de caso reais para exercitar requisitos e modelagem</li>
+                <li>Atividades práticas utilizando ferramentas de modelagem UML</li>
+                <li>Projetos em grupo que simulam etapas completas do ciclo de desenvolvimento</li>
+                <li>Debates e discussões para consolidação de conceitos</li>
+                <li>Avaliações contínuas, com provas teóricas e entregas práticas</li>
+            </ul>
+
+            <p>Exemplo de diagrama de classes em pseudocódigo UML:</p>
+            <div class="uml-code">
+                <code>
+        <span class="uml-class">Classe Usuário</span> {<br>
+        &nbsp;&nbsp;-id: int<br>
+        &nbsp;&nbsp;-nome: string<br>
+        &nbsp;&nbsp;-email: string<br>
+        &nbsp;&nbsp;-senha: string<br>
+        &nbsp;&nbsp;+autenticar(): boolean<br>
+        }<br><br>
+        
+        <span class="uml-class">Classe Produto</span> {<br>
+        &nbsp;&nbsp;-codigo: int<br>
+        &nbsp;&nbsp;-descricao: string<br>
+        &nbsp;&nbsp;-preco: float<br>
+        }<br><br>
+        
+        <span class="uml-relation">Usuário "1" -- "*" Pedido</span><br>
+        <span class="uml-relation">Pedido "*" -- "*" Produto</span>
+    </code>
+            </div>
+        </section>
+
+        <section class="materia-section">
+            <h2>Competências Desenvolvidas</h2>
+            <p>Ao final do curso, o aluno estará apto a:</p>
+
+            <ul>
+                <li>Compreender os fundamentos da Engenharia de Software e sua relevância</li>
+                <li>Avaliar e aplicar diferentes modelos de processo de desenvolvimento, com foco no RUP</li>
+                <li>Levantar, organizar e documentar requisitos de maneira clara e precisa</li>
+                <li>Utilizar UML para modelar sistemas com atores, casos de uso e diagrama de classes</li>
+                <li>Estruturar a arquitetura de sistemas, identificando componentes, camadas e suas responsabilidades</li>
+                <li>Adotar práticas organizadas e orientadas à qualidade no desenvolvimento de software, favorecendo a manutenção, evolução e clareza técnica dos projetos</li>
+            </ul>
+
+            <p>Exemplo de fases do RUP:</p>
+            <div class="uml-code">
+                <code>
+        <span class="uml-keyword">1. Concepção</span> (Inception):<br>
+        &nbsp;&nbsp;- Definir escopo do projeto<br>
+        &nbsp;&nbsp;- Identificar stakeholders<br>
+        &nbsp;&nbsp;- Estimar custos e prazos<br><br>
+        
+        <span class="uml-keyword">2. Elaboração</span> (Elaboration):<br>
+        &nbsp;&nbsp;- Refinar requisitos<br>
+        &nbsp;&nbsp;- Desenvolver arquitetura base<br>
+        &nbsp;&nbsp;- Mitigar riscos principais<br><br>
+        
+        <span class="uml-keyword">3. Construção</span> (Construction):<br>
+        &nbsp;&nbsp;- Implementar funcionalidades<br>
+        &nbsp;&nbsp;- Desenvolver componentes<br>
+        &nbsp;&nbsp;- Preparar versão beta<br><br>
+        
+        <span class="uml-keyword">4. Transição</span> (Transition):<br>
+        &nbsp;&nbsp;- Implantar sistema<br>
+        &nbsp;&nbsp;- Treinar usuários<br>
+        &nbsp;&nbsp;- Realizar ajustes finais
+    </code>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">João <span>Cestonaro</span></a>
+                    <p>Desenvolvido com paixão e dedicação durante minha jornada acadêmica.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.html#sobre">Sobre Mim</a></li>
+                        <li><a href="../../index.html#contato">Contato</a></li>
+                        <li><a href="../../disciplinas.html">Matérias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> joaoantoniogms938@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Urânia, São Paulo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Desenvolvido por João Antonio Gomes Cestonaro</p>
+                <p>Todos os direitos reservados © 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>
